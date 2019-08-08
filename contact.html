@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+
+/* style of dropbtn */
+.dropbtn {
+    font-family: Catamaran;
+    background-color: transparent;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    color: #111;
+    text-transform: uppercase;
+}
+
+/* container <div> - the content of dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* content (default: hidden) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* the links of dropdown content */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* colour changed */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* display dropdown content */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* change color */
+.dropdown:hover .dropbtn {
+    background-color: #inherit;
+}
+</style>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Contact - MY SITE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Cormorant+Garamond:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-contact.css">
+  </head>
+  <body>
+
+
+    <!-- header starts -->
+
+    <header>
+      <!--Header logo-->
+      <img class="header-brand" src="home-img/2logo-payoff-pink-correct.png" alt="some_text" style="vertical-align:middle">
+      <!--Header menu-->
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="self-care.html">Self-care</a></li>
+
+          <div class="dropdown">
+            <button class="dropbtn">More</button>
+              <div class="dropdown-content">
+                <a href="#.html">Connect</a>
+                <a href="#">Professional Resources</a>
+                <a href="#">Employer Resources</a>
+              </div>
+          </div>
+        </ul>
+      </nav>
+      <div>
+          <div style="height: 0px; overflow: hidden; width: 100%;"></div>
+          <hr class="styled-hr" style="width:100%;">
+          <div style="height: 0px; overflow: hidden; width: 100%;"></div>
+      </div>
+
+    <!--The header END-->
+    </header>
+    <!-- header ends -->
+
+
+
+
+    <!-- content page starts -->
+    <main>
+      <section class="case-vid">
+          <!--<h2>About</h2>-->
+
+          <article>
+            <div class="content-div">
+              <br>
+              <div class="content-innerdiv">
+
+
+
+              <br>
+                <div class="form-div">
+                  <form enctype="multipart/form-data" action="formSubmitAjax.php" method="POST" id="form-997547915729521935" accept-charset="UTF-8" target="form-997547915729521935-target-1561741162299">
+                    <div id="" class="" style="margin-top:10px;">
+                      <ul class="" id="">
+                        <h2 class=""><font size="6" color="#ff1493">Contact us</font></h2><br /><br />
+                        <label class=""><span class="form-required" style="color: red; size: 5pt;">*</span>
+                          <i style="color: rgba(97,97,97,0.57);">Indicates required field</i>
+                        </label>
+                        <br />
+                        <br />
+                        <br />
+
+                        <div>
+                          <div class="" style="margin:5px 0px 5px 0px;">
+                            <label class="name" style="font-size: 14pt">Name
+                              <span class="" style="color: red;">
+                                * &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                              </span>
+                            </label>
+                            <br />
+                            <br />
+                            <div class="">
+                              <input aria-required="true" id="" class="name-input" placeholder="First" type="text" name="firstname">
+                              <input aria-required="true" id="" class="name-input" placeholder="Last" type="text" name="lastname">
+
+                            </div>
+                            <br />
+                          </div>
+                          <div style="clear:both;"></div>
+                        </div>
+
+
+                        <div>
+                          <div class="email" style="margin:5px 0px 5px 0px;">
+                            <label class="" for="input-800927583625605621" style="font-size: 14pt;">Email
+                              <span class="form-required" style="color: red; size: 5pt;">* &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+                              </span>
+                            </label>
+                            <br />
+                            <br />
+                            <div class="">
+                              <input aria-required="true" id="" class="email-input" type="text" name="email">
+                            </div>
+                            <div id="" class="" style="display:none;">
+                            </div>
+                          </div>
+                        </div>
+                        <br />
+
+                        <div>
+                          <div class="comment" style="margin:5px 0px 5px 0px;">
+                            <label class="" for="input-452409781936236932" style="font-size: 14pt">Comment
+                              <span class="form-required" style="color: red; size: 5pt;">* &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                              &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                              &nbsp&nbsp&nbsp&nbsp
+
+                              </span>
+                            </label>
+                            <br />
+                            <br />
+                              <div class="">
+                                <textarea aria-required="true" id=""  class="" name="comment"></textarea>
+                              </div>
+                              <div id="instructions-452409781936236932" class="wsite-form-instructions" style="display:none;"></div>
+                          </div>
+                        </div>
+                        <br />
+
+                        <div>
+                          <div class="" style="margin:5px 0px 5px 0px;">
+                            <a class="">
+                              <button value="button" style="width:150px;height: 60px; background-color: #e52270; color: white; font-size: 14pt;">submit</button>
+                            </a>
+                          </div>
+                        </div>
+
+                      </ul>
+
+                    </div>
+                  </form>
+                </div>
+                <br>
+
+              </div>
+              <br />
+              <br />
+            </div>
+          </article>
+
+
+
+
+      </section>
+    </main>
+    <!-- content page ends -->
+    <div class="wrapper">
+      <footer>
+        <ul class="footer-links-main">
+          <li><a href="index.html">Home</a></li>
+          <br />
+          <li><a href="about.html">About</a></li>
+          <br />
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <!--The latest cases footer menu-->
+
+        <div class="footer-sm">
+          <a href="#">
+            <img src="img/youtube-symbol.png" alt="youtube icon">
+          </a>
+          <a href="#">
+            <img src="img/twitter-logo-button.png" alt="youtube icon">
+          </a>
+          <a href="#">
+            <img src="img/facebook-logo-button.png" alt="youtube icon">
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
