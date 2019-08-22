@@ -8,18 +8,18 @@
 .dropbtn {
     font-family: Catamaran;
     background-color: transparent;
-    padding: 14px;
-    font-size: 16px;
+    padding: 1px;
+    font-size: 17px;
     border: none;
     cursor: pointer;
     color: #111;
-    text-transform: uppercase;
-}
+  }
 
 /* container <div> - the content of dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
+
 }
 
 /* content (default: hidden) */
@@ -28,7 +28,7 @@
     position: absolute;
     right: 0;
     background-color: #f9f9f9;
-    min-width: 260px;
+    min-width: 220px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -38,6 +38,8 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    line-height: 25px;
+
 }
 
 /* colour changed */
@@ -52,6 +54,52 @@
 .dropdown:hover .dropbtn {
     background-color: #inherit;
 }
+
+
+/* language version starts */
+.dropbtn-language {
+    font-family: Catamaran;
+    background-color: transparent;
+    padding: 1px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    color: #111;
+}
+
+.dropdown-language {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-language {
+    display: none;
+    position: absolute;
+    right: 50;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content-language a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    line-height: 25px;
+
+}
+
+.dropdown-content-language a:hover {background-color: #f1f1f1}
+
+.dropdown-language:hover .dropdown-content-language {
+    display: block;
+}
+
+.dropdown-language:hover .dropbtn-language {
+    background-color: #inherit;
+}
+
+/* language version ends */
 </style>
 
   <head>
@@ -76,14 +124,28 @@
           <li><a href="about.html">About</a></li>
           <li><a href="self-care.html">Self-care</a></li>
 
-          <div class="dropdown">
-            <button class="dropbtn">More</button>
-              <div class="dropdown-content">
-                <a href="connect.html">Connect</a>
-                <a href="professional-resources.html">Professional Resources</a>
-                <a href="employer-resources.html">Employer Resources</a>
-              </div>
-          </div>
+          <li>
+            <div class="dropdown">
+              <a class="dropbtn">More</a>
+                <div class="dropdown-content">
+                  <a href="connect.html">Connect</a>
+                  <a href="professional-resources.html">Professional Resources</a>
+                  <a href="employer-resources.html">Employer Resources</a>
+                </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="dropdown-language">
+              <a class="dropbtn-language">Language</a>
+                <div class="dropdown-content-language">
+                  <a href="#.html">English</a>
+                  <a href="#">Dutch</a>
+                  <a href="#">Franch</a>
+                  <a href="#">Flemish</a>
+                </div>
+            </div>
+          </li>
         </ul>
       </nav>
       <div>

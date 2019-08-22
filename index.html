@@ -7,18 +7,18 @@
 .dropbtn {
     font-family: Catamaran;
     background-color: transparent;
-    padding: 14px;
-    font-size: 16px;
+    padding: 1px;
+    font-size: 17px;
     border: none;
     cursor: pointer;
     color: #111;
-    text-transform: uppercase;
-}
+  }
 
 /* container <div> - the content of dropdown */
 .dropdown {
     position: relative;
     display: inline-block;
+
 }
 
 /* content (default: hidden) */
@@ -27,7 +27,7 @@
     position: absolute;
     right: 0;
     background-color: #f9f9f9;
-    min-width: 240px;
+    min-width: 220px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -37,6 +37,8 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    line-height: 25px;
+
 }
 
 /* colour changed */
@@ -57,8 +59,8 @@
 .dropbtn-language {
     font-family: Catamaran;
     background-color: transparent;
-    padding: 14px;
-    font-size: 16px;
+    padding: 1px;
+    font-size: 17px;
     border: none;
     cursor: pointer;
     color: #111;
@@ -72,7 +74,7 @@
 .dropdown-content-language {
     display: none;
     position: absolute;
-    right: 0;
+    right: 50;
     background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -82,6 +84,8 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    line-height: 25px;
+
 }
 
 .dropdown-content-language a:hover {background-color: #f1f1f1}
@@ -120,25 +124,28 @@
           <li><a href="about.html">About</a></li>
           <li><a href="self-care.html">Self-care</a></li>
 
-          <div class="dropdown">
-            <button class="dropbtn">More</button>
-              <div class="dropdown-content">
-                <a href="connect.html">Connect</a>
-                <a href="professional-resources.html">Professional Resources</a>
-                <a href="employer-resources.html">Employer Resources</a>
-              </div>
-          </div>
+          <li>
+            <div class="dropdown">
+              <a class="dropbtn">More</a>
+                <div class="dropdown-content">
+                  <a href="connect.html">Connect</a>
+                  <a href="professional-resources.html">Professional Resources</a>
+                  <a href="employer-resources.html">Employer Resources</a>
+                </div>
+            </div>
+          </li>
 
-          <br />
-          <div class="dropdown-language">
-            <button class="dropbtn-language">LANGUAGE</button>
-              <div class="dropdown-content-language">
-                <a href="#.html">English</a>
-                <a href="#">Dutch</a>
-                <a href="#">Franch</a>
-                <a href="#">Flemish</a>
-              </div>
-          </div>
+          <li>
+            <div class="dropdown-language">
+              <a class="dropbtn-language">Language</a>
+                <div class="dropdown-content-language">
+                  <a href="#.html">English</a>
+                  <a href="#">Dutch</a>
+                  <a href="#">Franch</a>
+                  <a href="#">Flemish</a>
+                </div>
+            </div>
+          </li>
 
         </ul>
 
@@ -359,17 +366,17 @@
     <script type="text/javascript">
 
         window.onload = function () {
-            //获取信息显示ID info
+            //get ID info
             var info = document.getElementById("info");
 
-            //获取图片ID images
+            //get ID images
             var images = document.getElementById("images");
             var path = ["home-img/slid1-1_orig.jpg", "home-img/slid2_orig.jpg", "home-img/slide3_orig.jpg", "home-img/slide4-2_orig.jpg"];
 
-            //定义图片索引
+            //define index of images
             var index = 0;
 
-            //获取单击按钮标签 button
+            //get button
             var btNext = document.getElementById("buttonNext");
             var btLast = document.getElementById("buttonLast");
 
