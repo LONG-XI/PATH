@@ -527,3 +527,58 @@ footer ul li a {
     text-transform: uppercase;
   }
 }
+
+/*botton contents starts*/
+
+/* phone version */
+.bottom-section {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.bottom-img {
+  flex-basis: 90%;
+  margin: 50px;
+}
+
+.bottom-img img {
+  width: 90%;
+}
+
+/*Here we style the header for the desktop version*/
+@media only screen and (min-width: 550px) {
+
+  .bottom-section {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bottom-img {
+    flex-basis: 160px;
+    margin: 20px;
+  }
+
+  .bottom-img img {
+    width: 93%;
+  }
+
+  .bottom-section-secondcolum {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: flex-start;
+
+  }
+
+
+
+}

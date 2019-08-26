@@ -1,0 +1,739 @@
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+    width: 100%;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/*OUR CODE STARTS HERE!!! - MY CODE*/
+
+/*ALL HTML elements gets this styling*/
+* {
+  text-decoration: none;
+}
+
+/*Here we style the header for the mobile version*/
+header {
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+}
+
+header .header-brand {
+  font-family: Catamaran;
+  font-size: 24px;
+  font-weight: 900;
+  color: #111;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 13px 0;
+  width: 210px;
+  height: 80px;
+}
+
+header nav ul {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  word-wrap:break-word;
+}
+
+header nav ul li {
+  display: inline-block;
+  float: left;
+  list-style: none;
+  padding: 20px 6px;
+}
+
+header nav ul li a {
+  font-family: Catamaran;
+  font-size: 17px;
+  color: #111;
+}
+
+header .header-cases {
+  display: none;
+}
+
+header .dropdown-language {
+
+}
+
+.dropdown-content-language {
+    min-width: 100px;
+}
+
+header hr {
+  width: 100%;
+}
+
+/*Here we style the header for the desktop version*/
+@media only screen and (min-width: 800px) {
+  header .header-brand {
+    margin: 31px 0;
+    text-align: left;
+    line-height: 38px;
+    padding: 0 20px 0 40px;
+    border-right: 3px solid #111;
+    float: left;
+  }
+
+  header nav ul {
+    margin: 20px 0px 0px 20px;
+    float: left;
+
+  }
+
+  header nav ul li {
+    padding: 20px 16px;
+
+  }
+
+  header nav ul li a {
+    font-size: 19px;
+    line-height: 55px; /* control the gap between dropbtn and dropdown-content */
+
+  }
+
+  header hr {
+    width: 100%;
+  }
+
+ .dropbtn {
+  font-size: 19px;
+
+ }
+
+ .dropbtn-language {
+  font-size: 19px;
+ }
+
+ .dropdown-content-language {
+      min-width: 150px;
+  }
+
+  .lineup {
+    width: auto;
+  }
+}
+
+/*INDEX*/
+/*Here we style the main content for the mobile version*/
+.index-banner {
+  width: 100%;
+  height: calc(70vh - 100px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px,279.16px;
+  display: table;
+
+}
+
+.index-banner div {
+
+  margin: 60px 5px 20px;
+  width: calc(100% - 0px);
+  height: 200px;
+  vertical-align: middle;
+  text-align: center;
+
+
+}
+
+.vertical-center {
+  background-image: url('../home-img/wrap-copy_orig.jpg');
+  background-size: 400px 290px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vertical-center2 {
+  background-image: url('../home-img/logo-path-seas.png');
+  background-size: 350px 220px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.index-banner2 {
+  width: 100%;
+  height: calc(40vh - 100px);
+  background-image: url('home-img/logo-path-seas.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 320px,151.97px;
+  display: table;
+}
+
+.slides-section {
+  text-align: center;
+  background-color: darkblue;
+}
+
+.slides {
+  width: 90%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius:15px;
+}
+
+.index-banner h2 {
+  font-family: Catamaran;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 70px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1 {
+  font-family: Cormorant Garamond;
+  font-size: 28px;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 8px #111;
+  margin-top: 350px;
+}
+
+.wrapper {
+    background-color: darkblue;
+
+}
+
+.index-links div {
+  margin: 16px 16px 20px;
+  width: calc(100% - 32px);
+  height: 300px;
+  background-color: #f2f2f2;
+  vertical-align: middle;
+  text-align: center;
+  border-radius:30px;
+
+}
+
+.index-links h3 {
+  font-family: Catamaran;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 1px #111;
+  font-style: italic;
+}
+
+.index-links div img {
+  width: 280px;
+  height: 200px;
+  margin-top: 20px;
+  border-radius:10px
+
+}
+
+.index-boxlink-square1{
+  background-image: url('../home-img/doctor_2.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+
+.index-boxlink-square2{
+  background-image: url('../home-img/connect.jpeg');
+  background-size: cover;
+}
+
+.index-boxlink-square3{
+  background-image: url('../home-img/workshop_1.jpeg');
+  background-size: cover;
+}
+
+.index-boxlink-square4{
+  background-image: url('../home-img/job_3.jpeg');
+  background-size: cover;
+}
+
+/* bottom starts */
+.bottom-section div {
+  margin: 16px 16px 20px;
+  width: calc(100% - 32px);
+  height: 150px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius:30px;
+
+}
+
+.bottom-section-secondcolum div {
+  margin: 16px 16px 20px;
+  width: calc(100% - 32px);
+  height: 150px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius:30px;
+
+}
+
+.bottom-div-square1 {
+  background-image: url('../home-img/hec.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 280px 140px;
+}
+
+.bottom-div-square2 {
+  background-image: url('../home-img/minddevon.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 260px 150px;
+}
+
+.bottom-div-square3 {
+  background-image: url('../home-img/southampton.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+.bottom-div-square4{
+  background-image: url('../home-img/odisee.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200px 100px;
+}
+
+.bottom-div-square5{
+  background-image: url('../home-img/kent.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 240px 120px;
+}
+
+.bottom-div-square6{
+  background-image: url('../home-img/uza.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 180px 70px;
+}
+
+.bottom-div-square7{
+  background-image: url('../home-img/mz.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250px 150px;
+}
+
+.bottom-div-square8{
+  background-image: url('../home-img/ihv.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250px 100px;
+}
+
+.bottom-div-square9{
+  background-image: url('../home-img/chd.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250px 130px;
+}
+
+.bottom-div-square10{
+  background-image: url('../home-img/api.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 280px 60px;
+
+}
+
+.bottom-div-square11{
+  background-image: url('../home-img/bu.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 280px 90px;
+}
+
+.bottom-div-square12{
+  background-image: url('../home-img/nhs.jpg?');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 280px 100px;
+}
+
+.bottom-div-square13{
+  background-image: url('../home-img/go.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 280px 140px;
+}
+
+/* bottom ends */
+
+
+
+/*Here we style the main content for the desktop version*/
+@media only screen and (min-width: 900px) {
+  .wrapper {
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  .index-banner {
+    height: 400px;
+    margin-left: 50px;
+
+  }
+
+  .index-banner div {
+    margin: 20px 10px 20px;
+    height: 390px;
+    float: left;
+  }
+
+  .index-banner2 {
+    height: 450px;
+  }
+
+  .vertical-center {
+    width: calc(40% - 20px) !important;
+    background-size: 375px 300px;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+
+  .vertical-center2 {
+    width: calc(60% - 20px) !important;
+    background-size: 450px 260px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .index-banner h1 {
+    display: block;
+    width: 560px;
+    margin: 0 auto;
+  }
+
+  .index-links {
+    overflow: hidden;
+  }
+
+  .index-links div {
+    margin: 20px 10px 20px;
+    height: 230px;
+    background-color: #f2f2f2;
+    float: left;
+  }
+
+  .index-links h3 {
+    font-family: Catamaran;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 100px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 1px #111;
+    font-style: italic;
+  }
+
+
+  .index-boxlink-square1 {
+    width: calc(25% - 20px) !important;
+    background-size: cover;
+  }
+  .index-boxlink-square2 {
+    width: calc(25% - 20px) !important;
+    background-size: cover;
+
+  }
+  .index-boxlink-square3 {
+    width: calc(25% - 20px) !important;
+    background-size: cover;
+  }
+  .index-boxlink-square4 {
+    width: calc(25% - 20px) !important;
+    background-size: cover;
+  }
+
+  .index-boxlink-rectangle {
+    width: calc(50% - 20px) !important;
+  }
+
+  .index-links div h3 {
+    line-height: 230px;
+  }
+
+  /* bottom starts */
+  .bottom-section div {
+    margin: 10px 10px 0px;
+    width: calc(100% - 32px);
+    height: 130px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius:30px;
+    float: left;
+  }
+
+  .bottom-section-secondcolum div {
+    margin: 10px 16px 0px;
+    width: calc(100% - 32px);
+    height: 130px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius:30px;
+    float: left;
+  }
+
+  .bottom-div-square1 {
+    width: calc(12% - 0px) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 160px 90px;
+  }
+
+  .bottom-div-square2 {
+    width: calc(12% - 0px) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px 90px;
+
+  }
+
+  .bottom-div-square3 {
+    width: calc(12% - 0px) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120px 120px;
+
+
+  }
+
+  .bottom-div-square4{
+    width: calc(12% - 0px) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px 90px;
+
+  }
+
+  .bottom-div-square5{
+    width: calc(12% - 0px) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 170px 100px;
+  }
+
+  .bottom-div-square6{
+    width: calc(14% - 0px) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px 80px;
+  }
+
+  .bottom-div-square7{
+    width: calc(14% - 0px) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 170px 100px;
+  }
+
+  .bottom-div-square8{
+    width: calc(14% - 0px) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 170px 80px;
+  }
+
+  .bottom-div-square9{
+    width: calc(14% - 0px) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 170px 80px;
+  }
+
+  .bottom-div-square10{
+    width: calc(14% - 0px) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 190px 40px;
+  }
+
+  .bottom-div-square11{
+    width: calc(14% - 0px) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 170px 70px;
+  }
+
+  .bottom-div-square12{
+    width: calc(14% - 0px) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 190px 60px;
+  }
+
+  .bottom-div-square13{
+    width: calc(15% - 0px) !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150px 70px;
+  }
+
+  /* bottom ends */
+
+}
+
+/*FOOTER*/
+/*Here we style the footer for the mobile version*/
+footer {
+  width: calc(100% - 80px);
+  padding: 40px 40px;
+  margin-top: 20px;
+  background-color: #111;
+  overflow: hidden;
+}
+
+footer ul {
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+}
+
+footer ul li {
+  display: block;
+  list-style: none;
+}
+
+footer ul li a {
+  font-family: Catamaran;
+  font-size: 24px;
+  color: #fff;
+  line-height: 40px;
+}
+
+.footer-links-cases {
+  display: none;
+}
+
+.footer-sm {
+  width: 50px;
+  float: right;
+}
+
+.footer-sm img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/*Here we style the footer for the desktop version*/
+@media only screen and (min-width: 1000px) {
+  .footer-links-cases {
+    display: block;
+  }
+
+  footer ul {
+    padding-right: 30px;
+  }
+
+  footer ul li p {
+    font-family: Catamaran;
+    font-size: 24px;
+    color: #fff;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+}
