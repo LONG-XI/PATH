@@ -145,7 +145,13 @@ header .header-cases {
   display: none;
 }
 
-header .dropdown-language {
+header .dropdown {
+  margin-top: 13px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+header .dropbtn-language {
 
 }
 
@@ -196,6 +202,18 @@ header hr {
 
  .dropbtn-language {
   font-size: 19px;
+ }
+
+ header .dropdown {
+   margin-top: 30.5px;
+   margin-left: 16px;
+   margin-right: 28px;
+ }
+
+ header .dropbdown-language {
+   margin-top: 30.5px;
+   margin-left: 16px;
+   margin-right: 28px;
  }
 
  .dropdown-content-language {
@@ -705,6 +723,29 @@ footer ul li a {
   line-height: 40px;
 }
 
+footer ul li p {
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #fff;
+  line-height: 40px;
+}
+
+footer li p {
+  font-family: Catamaran;
+  font-size: 16px;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+}
+
+footer li p a {
+  font-family: Catamaran;
+  font-size: 16px;
+  color: blue;
+  line-height: 40px;
+}
+
+
 .footer-links-cases {
   display: none;
 }
@@ -731,9 +772,24 @@ footer ul li a {
 
   footer ul li p {
     font-family: Catamaran;
-    font-size: 24px;
+    font-size: 16px;
     color: #fff;
     line-height: 40px;
-    text-transform: uppercase;
   }
+
+  footer li p {
+    font-family: Catamaran;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  footer li p a {
+    font-family: Catamaran;
+    font-size: 16px;
+    color: blue;
+    line-height: 40px;
+  }
+
 }
